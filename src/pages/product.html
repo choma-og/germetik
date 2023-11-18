@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  {{> head }}
+  <body>
+    <div class="wrapper">
+      {{> header }}
+      <main class="main">
+        {{> section-pages }}
+        {{> production }}
+        {{> form }}
+      </main>
+      {{> footer }}
+      {{> footer-bot }}
+    </div>
+    <!-- <script>
+
+   document.querySelectorAll('a[data-title]').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        var targetTitle = link.getAttribute('data-title');
+
+        sessionStorage.setItem('targetTitle', targetTitle);
+
+        window.location.href = "/germetik/src/pages/product-list.html";
+      });
+    });
+  function toggleAriaExpanded() {
+
+      const targetTitle = document.querySelector('.list-arrow').dataset.title;
+
+
+      localStorage.setItem('targetTitle', targetTitle);
+    }
+   
+    document.addEventListener('visibilitychange', function() {
+      if (document.hidden) {
+        var targetTitle = sessionStorage.getItem('targetTitle');
+        localStorage.setItem('targetTitle', targetTitle);
+      }
+    });
+    </script> -->
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>

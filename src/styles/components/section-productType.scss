@@ -1,0 +1,132 @@
+.product {
+  background-color: var(--color-black);
+  &__container {
+    padding-bottom: 110px;
+    @media (max-width:1024px) {
+      padding-bottom: 90px;
+    }
+    @media (max-width:600px) {
+      padding-bottom: 30px;
+    }
+  }
+  &__descr {
+    max-width: 450px;
+    color: var(--color-white);
+    line-height: 140.023%; /* 28.005px */
+    margin-bottom: 90px;
+    @media (max-width:600px) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    @media (max-width:1150px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__item {
+    width: 425px;
+    border-radius: 15px;
+    position: relative;
+    @media (max-width:470px) {
+      width: 100%;
+    }
+    img {
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+  &__heading {
+    color: #FFF;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 22px;
+    line-height: 109.023%; /* 23.985px */
+    max-width: 300px;
+    @media (max-width:600px) {
+      left: 30px;
+      top: 30px;
+      font-size: 18px;
+    }
+    &--gray {
+      color: #454040;
+    }
+  }
+  &__link {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    color: #FFF;
+    &--gray {
+      color: #454040;
+    }
+    @media (max-width:600px) {
+      left: 30px;
+      bottom: 30px;
+      font-size: 16px;
+    }
+  }
+}
+.intro {
+  border-radius: 20px;
+  overflow: auto;
+  background-color: var(--color-primary);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+  padding: 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  @media (max-width:600px) {
+    padding: 30px;
+    gap: 15px;
+    
+  }
+  &__heading {
+    max-width: 300px;
+    color: #000;
+    font-family: Gilroy;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 109.023%;
+    @media (max-width:600px) {
+      font-size: 18px;
+    }
+  }
+  &__link {
+    margin: auto 0 0 0;
+    color: #000;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120.023%;
+    /* 19.204px */
+  }
+  &__text {
+    color: #000;
+    /* текст */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 21px */
+  }
+}
+.product__item:hover .intro {
+  opacity: 1;
+  visibility: visible;
+}

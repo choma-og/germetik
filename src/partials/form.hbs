@@ -1,0 +1,30 @@
+<section class="form section section__border">
+  <div class="form__container">
+    <div class="section__wrapper form__wrapper">
+      <div class="section__box">
+        <h2 class="section__title form__title">заказать звонок</h2>
+      </div>
+    </div>
+    <div class="form__request request">
+      <form class="js-form request__form" action="ajax/form.php" method="post">
+        <div class="request__wrapper">
+          <div class="request__input wrapper__name">
+            <input name="user_name" class="request__name" type="text" id="request-name" data-type="text" placeholder="Ваше имя">
+              <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                <span>Пожалуйста, перепроверьте данные</span>
+              </div>
+          </div>
+          <div class="request__input wrapper__phone">
+            <input data-mask="phone" name="user_phone" class="request__tel" data-type="phone" type="text" id="request-phone" placeholder="Телефон">
+            <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+              <span>Пожалуйста, перепроверьте данные</span>
+            </div>
+          </div>
+        </div>
+        <p class="request__descr">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;<a class="request__policy" href="">обработку персональных данных</a></p>
+        <button class="js-form-submit js-modal-btn btn btn-reset btn--stroke" type="submit">Заказать звонок</button>
+      </form>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,15 @@
+.form {
+  background-color: var(--color-sail);
+  &__container {
+    padding-bottom: 70px;
+    @media (max-width:600px) {
+      padding-bottom: 30px;
+    }
+  } 
+  &__wrapper {
+    padding-bottom: 55px;
+    @media (max-width:600px) {
+      padding-bottom: 30px;
+    }
+  }
+}

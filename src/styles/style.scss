@@ -1,0 +1,37 @@
+// базовые подключения
+@import "./settings";
+@import "./mixins";
+@import "./fonts";
+@import "./vars";
+
+// компоненты страницы
+
+// подключения компонентов страницы (большие компоненты)
+@import "./components/header";
+@import "./components/hero";
+@import "./components/products";
+@import "./components/advantages";
+@import "./components/services";
+@import "./components/objects";
+@import "./components/partners";
+@import "./components/about";
+@import "./components/form";
+@import "./components/production";
+@import "./components/_section-cardList";
+@import "./components/section-card";
+@import "./components/_section-favorDescr";
+@import "./components/section-aboutDescr";
+@import "./components/maps";
+@import "./components/footer";
+
+// подключения компонентов страницы (маленькие компоненты)
+@import "./components/request";
+@import "./components/section-pages";
+@import "./components/_section-card-slider";
+@import "./components/test";
+@import "./components/documents";
+@import "./components/_section-excellence";
+@import "./components/dillers";
+@import "./components/section-productType.scss";
+@import "./components/modals";
+@import "./components/footer-bot";

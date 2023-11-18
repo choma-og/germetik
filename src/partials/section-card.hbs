@@ -1,0 +1,106 @@
+<section class="card">
+  <div class="card__container">
+    <div class="card__info">
+      <div class="card__image">
+          <img src="/public/img/card/sazilast-big.png" alt="">
+      </div>
+      <div class="card__descr">
+          <div class="card__info-box">
+            <span data-availability="true" class="card__availability">В наличии</span>
+            <span class="card__vendor">Артикул 30405649</span>
+          </div>
+          <h2 class="card__heading">Двухкомпонентный безусадочный отверждающийся герметик &laquo;Сазиласт 24&nbsp;классик&raquo; разработан на&nbsp;основе полиуретанового полимера.</h2>
+          <div class="card__price">
+            <span class="card__price-value">456,00 ₽</span>
+            <span class="card__price-descr">Гибкие цены, условия предоставления цены уточняйте у&nbsp;менеджера</span>
+          </div>
+          <button class="js-modal-delivery btn btn-reset btn--stroke">заказать</button>
+      </div>
+    </div>
+      <div class="card__acrd" id="card__acrd">
+        <div class="card__acrd-item">
+          <h3 class="card__acrd-title">
+            Характеристики
+            <div class="card__acrd-arrow">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.19653 0L8.19653 14.9234" stroke="#454040" stroke-width="1.5"/>
+              <path d="M1.46964 7.53747L8.23486 15.0749L15.0001 7.53747" stroke="#454040" stroke-width="1.5"/>
+            </svg>
+            </div>
+          </h3>
+          <div class="card__acrd-content">
+            <p class="card__acrd-descr">
+              &laquo;Сазиласт 24&nbsp;классик&raquo; идеально подходит для герметизации деформационных швов стыков панелей наружных стен надземной части панельных зданий (в&nbsp;том числе и&nbsp;ремонта).
+            </p>
+          </div>
+        </div>
+        <div class="card__acrd-item">
+          <h3 class="card__acrd-title">
+            Преимущества
+            <div class="card__acrd-arrow">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.19653 0L8.19653 14.9234" stroke="#454040" stroke-width="1.5"/>
+                <path d="M1.46964 7.53747L8.23486 15.0749L15.0001 7.53747" stroke="#454040" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </h3>
+          <div class="card__acrd-content">
+            <p class="card__acrd-descr">
+              &laquo;Сазиласт 24&nbsp;классик&raquo; идеально подходит для герметизации деформационных швов стыков панелей наружных стен надземной части панельных зданий (в&nbsp;том числе и&nbsp;ремонта).
+            </p>
+          </div>
+        </div>
+        <div class="card__acrd-item">
+          <h3 class="card__acrd-title">
+            Упаковка и хранение
+            <div class="card__acrd-arrow">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.19653 0L8.19653 14.9234" stroke="#454040" stroke-width="1.5"/>
+                <path d="M1.46964 7.53747L8.23486 15.0749L15.0001 7.53747" stroke="#454040" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </h3>
+          <div class="card__acrd-content">
+            <p class="card__acrd-descr">
+              &laquo;Сазиласт 24&nbsp;классик&raquo; идеально подходит для герметизации деформационных швов стыков панелей наружных стен надземной части панельных зданий (в&nbsp;том числе и&nbsp;ремонта).
+            </p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<div class="modal-delivery">
+  <div class="modal-delivery__body">
+    <div class="modal-delivery__content">
+      <img class="modal-delivery__close" src="/public/svg/modal-close.svg" alt="">
+      <div class="modal-delivery__container">
+        <h2 class="modal-delivery__title">оформить заказ</h2>
+        <form class="js-form request__form" action="ajax/form.php" method="post">
+          <div class="request__wrapper modal-delivery__wrapper">
+            <div class="request__box">
+              <div class="request__input wrapper__name">
+                <input name="user_name" class="request__name" type="text" id="request-name" data-type="text"
+                  placeholder="Ваше имя">
+                <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                  <span>Пожалуйста, перепроверьте данные</span>
+                </div>
+              </div>
+              <div class="request__input wrapper__phone">
+                <input data-mask="phone" name="user_phone" class="request__tel" data-type="phone" type="text" id="request-phone"
+                  placeholder="Телефон">
+                <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+                  <span>Пожалуйста, перепроверьте данные</span>
+                </div>
+              </div>
+            </div>
+            <div class="request__input-text">
+              <input name="user_text" class="request__text" type="text" id="request-text" data-type="text" placeholder="Добавить сообщение">
+            </div>
+          </div>
+          <p class="request__descr">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;обработку персональных данных</p>
+          <button class="js-form-submit js-modal-btn btn btn-reset btn--stroke" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

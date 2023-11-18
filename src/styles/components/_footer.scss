@@ -1,0 +1,134 @@
+.footer {
+ background-color: var(--color-dark);
+ border-radius: 60px 60px 0 0;
+ @media (max-width:1024px) {
+  border-radius: 40px 40px 0px 0px;
+ }
+ @media (max-width:600px) {
+  border-radius: 30px 30px 0px 0px;
+ }
+ &__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @media (max-width:1140px) {
+    padding-bottom: 30px;
+  }
+  @media (max-width:860px) {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  @media (max-width:600px) {
+    padding-top: 30px;
+  }
+ }
+ &__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+ }
+ &-nav {
+
+  &__list {
+   display: flex;
+   gap: 50px;
+   align-items: center;
+   @media (max-width:1290px) {
+    gap: 30px;
+   }
+   @media (max-width:1140px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+   }
+  }
+  &__item {
+
+  }
+  &__link {
+   color: var(--color-white);
+   font-size: 18px;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: 0.72px;
+   text-transform: uppercase;
+   transition: color 0.3s ease 0s;
+   &:hover {
+    color: var(--color-primary);
+   }
+   @media (max-width:600px) {
+    font-size: 16px;
+   }
+  }
+ }
+ &-menu {
+  display: flex;
+  gap: 115px;
+  @media (max-width:1290px) {
+    gap: 50px;
+  }
+  @media (max-width:1140px) {
+    display: none;
+  }
+  &__list {
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+  }
+  &__link {
+   color: var(--color-gray);
+   font-size: 16px;
+   line-height: 111.023%;
+   transition: color 0.3s ease 0s;
+  //  &:hover {
+  //   color: var(--color-primary);
+  //  }
+   }
+   &__item {
+    max-width: 180px;
+    &:hover .footer-menu__link {
+      color: var(--color-primary);
+    }
+   }
+ }
+ &__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
+  @media (max-width:1140px) {
+    row-gap: 30px;
+  }
+  @media (max-width:860px) {
+    row-gap: 15px;
+  }
+ }
+ &__phones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  @media (max-width:860px) {
+    align-items: flex-start;
+  }
+ }
+ &__adress {
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  @media (max-width:600px) {
+    font-size: 12px;
+  }
+ }
+}
+.phones__link {
+ color: var(--color-white);
+ font-size: 22px;
+ line-height: 132.5%;
+ text-transform: uppercase;
+  @media (max-width:600px) {
+    font-size: 20px;
+  }
+}

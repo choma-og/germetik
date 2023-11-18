@@ -1,0 +1,118 @@
+.favor-descr {
+ background-color: var(--color-white);
+
+ &__container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  @media (max-width:1200px) {
+    flex-direction: column;
+    // min-height: 950px;
+    gap: 40px;
+  }
+  @media (max-width:1024px) {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  @media (max-width:996px) {
+    flex-direction: column;
+    // min-height: 1050px;
+  }
+  @media (max-width:600px) {
+    padding-top: 30px;
+    flex-direction: column;
+    // min-height: 700px;
+  }
+
+ }
+ &--info {
+  
+  p:last-child {
+    margin-bottom: 15px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 140%;
+  width: 50%;
+  font-size: 18px;
+  padding-right: 50px;
+  @media (max-width:1200px) {
+    width: 100%;
+    font-size: 20px;
+  }
+  @media (max-width:996px) {
+    padding-right: 0;
+  }
+  @media (max-width:600px) {
+    width: 100%;
+    font-size: 16px;
+    gap: 20px;
+  }
+}
+& .btn {
+  padding-top: 15px;
+  margin: auto 0 0 0;
+  width: fit-content;
+}
+&--image {
+  z-index: 1;
+ position: absolute;
+ bottom: 0;
+ right: 60px;
+ 
+//  width: 40%;
+ @media (max-width:1260px) {
+  right: 40px;
+ }
+ @media (max-width:1200px) {
+  width: initial;
+  position: relative;
+  height: 500px;
+  overflow: initial;
+  right: 0;
+  margin-left: -40px;
+  margin-right: -40px;
+ }
+
+ @media (max-width:800px) {
+  height: 450px;
+ }
+ @media (max-width:600px) {
+  height: 230px;
+ }
+ @media (max-width:540px) {
+  margin-left: -20px;
+  margin-right: -20px;
+  height: 230px;
+ }
+ img {
+  border-radius: 60px 60px 0px 0;
+  width: 555px;
+  @media (max-width:1200px) {
+    width: 100%;
+    object-fit: cover;
+    height: 695px;
+  }
+  @media (max-width:1024px) {
+    border-radius: 40px 40px 0px 0px;
+  }
+  @media (max-width:800px) {
+    height: 580px;
+  }
+  @media (max-width:600px) {
+    height: 300px;
+    border-radius: 30px 30px 0px 0px;
+  }
+  @media (max-width:540px) {
+    height: 300px;
+  }
+ }
+}
+}
+.favor-descr--info p:last-child {
+  margin-bottom: 15px;
+}

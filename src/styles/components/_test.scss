@@ -1,0 +1,26 @@
+.test {
+
+ &__slider {
+  display: flex;
+  position: relative;
+ }
+
+}
+
+.slider {
+ &__left {
+  width: 465px;
+
+ }
+ &__right {
+  width: 50%;
+
+ }
+
+}
+.left__swiper .swiper-slide {
+ width: 453px;
+}
+.left__swiper .swiper-slide img{
+ width: 453px;
+}

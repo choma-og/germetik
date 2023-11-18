@@ -1,0 +1,64 @@
+<div class="modal-header" id="modal-header">
+  <div class="modal-header__body">
+    <div class="modal-header__content">
+      <img class="modal-header__close" src="/public/svg/modal-close.svg" alt="">
+      <div class="modal-header__container">
+        <h2 class="modal-header__title">заказать звонок</h2>
+        <form class="js-form request__form" action="ajax/form.php" method="post">
+          <div class="request__wrapper modal-header__wrapper">
+            <div class="request__input request__name">
+              <input name="user_name" class="request__name" type="text" id="request-name" data-type="text" placeholder="Ваше имя">
+              <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                <span>Пожалуйста, перепроверьте данные</span>
+              </div>
+            </div>
+            <div class="request__input request__phone">
+              <input data-mask="phone" name="user_phone" class="request__tel" data-type="phone" type="text" id="request-phone" placeholder="Телефон">
+              <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+                <span>Пожалуйста, перепроверьте данные</span>
+              </div>
+            </div>
+          </div>
+          <p class="request__descr">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;обработку персональных данных</p>
+          <button class="js-modal-btn btn btn-reset btn--stroke js-form-submit" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-delivery">
+  <div class="modal-delivery__body">
+    <div class="modal-delivery__content">
+      <img class="modal-delivery__close" src="/public/svg/modal-close.svg" alt="">
+      <div class="modal-delivery__container">
+        <h2 class="modal-delivery__title">оформить заказ</h2>
+        <form class="js-form request__form" action="ajax/form.php" method="post">
+          <div class="request__wrapper modal-header__wrapper">
+            <div class="request__box">
+              <div class="request__input">
+                <input name="user_name" class="request__name" type="text" id="request-name" data-type="text"
+                  placeholder="Ваше имя">
+                <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                  <span>Пожалуйста, перепроверьте данные</span>
+                </div>
+              </div>
+              <div class="request__input">
+                <input data-mask="phone" name="user_phone" class="request__tel" data-type="phone" type="text" id="request-phone"
+                  placeholder="Телефон">
+                <div class="validate__form-error validate__form-error--phone js-error js-error-phone">
+                  <span>Пожалуйста, перепроверьте данные</span>
+                </div>
+              </div>
+            </div>
+            <div class="request__input-text">
+              <input name="user_text" class="request__text" type="text" id="request-text" data-type="text" placeholder="Добавить сообщение">
+            </div>
+          </div>
+          <p class="request__descr">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;обработку персональных данных</p>
+          <button class="js-form-submit js-modal-btn btn btn-reset btn--stroke" type="submit">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+.dillers {
+  background-color: var(--color-white);
+  &__container {
+    padding-bottom: 110px;
+    @media (max-width:600px) {
+      padding-bottom: 30px;
+    }
+  }
+  &__wrapper {
+    margin-bottom: 90px;
+    @media (max-width:600px) {
+      margin-bottom: 30px;
+    }
+  }
+  &__subtitile {
+    max-width: 360px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 70px;
+    justify-content: space-between;
+    @media (max-width:1170px) {
+      gap: 40px;
+    }
+    @media (max-width:1070px) {
+      justify-content: space-around;
+      gap: 50px;
+    }
+  }
+  &__item {
+    width: auto;
+    display: flex;
+    justify-content:flex-start;
+    // filter: grayscale(1);
+    // transition: filter 0.3s ease 0s;
+    @media (max-width:1070px) {
+      width: 330px;
+    }
+    @media (max-width:800px) {
+      width: auto;
+    }
+    img {
+      @media (max-width: 800px) {
+        width: 125px;
+      }
+    }
+    &:hover {
+      // filter: grayscale(0);
+    }
+  }
+}
